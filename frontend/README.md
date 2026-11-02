@@ -20,7 +20,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000. Vite proxies `/api` to http://localhost:5000. If your backend port differs, copy `.env.example` to `.env` and adjust `BACKEND_URL`.
+Open http://localhost:3000. Vite proxies `/api` to http://localhost:8000. If your backend port differs, copy `.env.example` to `.env` and adjust `BACKEND_URL`.
 
 ## Email OTP and admin setup
 
