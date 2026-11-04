@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/partner-portal", "destination": "/" },
+    { "source": "/partner-verify", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
