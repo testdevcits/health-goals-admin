@@ -18,3 +18,8 @@ export {default as DataTable} from './DataTable';
 export {default as Pagination} from './Pagination';
 export {default as ImportExportActions} from './ImportExportActions';
 export {default as EmptyState} from './EmptyState';
+
+export {default as StatCard} from './StatCard';
+export {default as SearchInput} from './SearchInput';
+export {default as FilterBar} from './FilterBar';
+export {default as UserCell} from './UserCell';

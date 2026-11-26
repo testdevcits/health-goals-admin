@@ -1,0 +1,29 @@
+/* Shared card and filter primitives, used first by the overview. */
+.hg-stat-card{display:block;width:100%;margin:0;text-align:left;background:#fff;color:inherit;font:inherit;transition:border-color .15s,box-shadow .15s,transform .15s}
+.hg-stat-card>div{display:flex;justify-content:space-between;align-items:center}
+.hg-stat-card>strong{display:block;margin:14px 0 8px}
+.hg-stat-card>small{display:block;color:#78867d;font-size:11px;line-height:1.5}
+button.hg-stat-card:hover{background:#fbfdf9;border-color:#9cb68c;box-shadow:0 4px 12px #243e3510;transform:translateY(-2px)}
+button.hg-stat-card:focus-visible{outline:2px solid #547c45;outline-offset:3px}
+.hg-filter-bar{border-bottom:1px solid #e7ede5}
+.hg-filter-bar .hg-filter-controls{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:16px 22px 10px;border:0;background:transparent}
+.hg-filter-controls>.search{flex:1 1 280px;min-width:0}
+.hg-filter-controls>.hg-select-wrap{flex:1 1 150px;min-width:0;max-width:100%}
+.hg-filter-controls .hg-select-value{overflow:hidden;text-overflow:ellipsis}
+.hg-filter-controls>.range-picker{flex:1 1 220px;min-width:0}
+.hg-filter-controls .range-trigger{width:100%;min-width:0}
+.hg-filter-summary{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:40px;padding:0 22px 12px;color:#78867d;font-size:12px}
+.hg-filter-summary .text-button{margin:0;min-height:28px;padding:4px 0}
+.overview-page>.stats{margin-bottom:20px}
+.overview-records{overflow:visible}
+.overview-records>.panel-heading{gap:16px;flex-wrap:wrap}
+.overview-records .table-scroll{border-radius:0 0 12px 12px}
+.overview-records .hg-empty-state{padding:40px 20px}
+.overview-error{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;margin-bottom:18px;border:1px solid #e7c8bd;border-radius:12px;background:#fff6f1;color:#874631}
+.overview-error p{margin:6px 0;font-size:13px}
+.overview-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:640px){.hg-filter-bar .hg-filter-controls{padding:14px 14px 8px}.hg-filter-controls>.search{flex-basis:100%}.hg-filter-controls>.range-picker{flex-basis:100%}.hg-filter-summary{padding:0 14px 12px}.overview-records>.panel-heading{padding:16px 14px}.overview-error{align-items:flex-start;flex-direction:column}.overview-page .stats{gap:10px}.overview-page .stat{padding:14px 12px}}
+
+.overview-records .table-scroll{contain:inline-size paint;position:relative}
+
+.hg-stat-skeleton{display:block;width:70%;height:1em;border-radius:6px;background:#e7ede5;animation:stat-pulse 1.2s ease-in-out infinite alternate}@keyframes stat-pulse{to{opacity:.4}}@media(prefers-reduced-motion:reduce){.hg-stat-skeleton{animation:none}}
